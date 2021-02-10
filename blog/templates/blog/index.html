@@ -1,1 +1,16 @@
-<h1> Hello World! </h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>PaperFun</title>
+</head>
+<body>
+
+<h1>PaperFun Official Website</h1>
+
+
+{% for post in posts %}
+    <p><a href="{% url 'blog:detail' post.id %}">{{ post.title }}</a></p>
+{% endfor %}
+
+</body>
+</html>

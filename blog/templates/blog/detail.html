@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PaperFun Detail</title>
+</head>
+<body>
+
+<h1>PaperFun Official Website</h1>
+
+
+<h2>{{ post.title }}</h2>
+
+<p>{{ post.main_text }}</p>
+
+{% for paper in papers %}
+<a href="{% url 'blog:paper_download' paper.id %}"">{{ paper.title }}</a><br>
+{% endfor %}
+
+<br>
+<button><a href="{% url 'blog:index' %}"">Back</a></button>
+</body>
+</html>
