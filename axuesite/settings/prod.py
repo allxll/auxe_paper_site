@@ -9,8 +9,8 @@ ALLOWED_HOSTS = [ 'paper.axue.de', ]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'axuesite',
-        'USER': 'axue',
-        'PASSWORD': 'xuwowuyou1',
+        'OPTIONS': {
+            'read_default_file': '/etc/mysql/my.cnf',
+        },
     }
 }
