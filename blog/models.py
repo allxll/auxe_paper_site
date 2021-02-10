@@ -19,7 +19,6 @@ class Post(models.Model):
 def content_file_name(instance, filename):
     ext = filename.split('.')[-1] 
     filename = f'{instance.id}.{ext}'
-    print(instance.id)
     return os.path.join('papers', filename)
 
 class Paper(models.Model):
