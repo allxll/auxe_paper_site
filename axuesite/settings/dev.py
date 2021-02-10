@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from axuesite.settings.base import *
 
 DEBUG = True
-STATIC_URL = '/static/'
+
 MEDIA_ROOT = BASE_DIR.joinpath('media')
 
 DATABASES = {

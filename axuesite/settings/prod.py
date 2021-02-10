@@ -1,8 +1,8 @@
 from axuesite.settings.base import *
 
 DEBUG = False
-STATIC_URL = '/var/www/paper.axue.de/static'
-MEDIA_ROOT = BASE_DIR.joinpath('/var/www/paper.axue.de/media')
+STATIC_ROOT = '/var/www/paper.axue.de/static'
+MEDIA_ROOT = '/var/www/paper.axue.de/media'
 ALLOWED_HOSTS = [ 'paper.axue.de' ]
 
 DATABASES = {
