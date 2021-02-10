@@ -1,9 +1,10 @@
-from axuesite.settings.base import *
+
+from .base import *
 
 DEBUG = False
 STATIC_ROOT = '/var/www/paper.axue.de/static'
 MEDIA_ROOT = '/var/www/paper.axue.de/media'
-ALLOWED_HOSTS = [ 'paper.axue.de' ]
+ALLOWED_HOSTS = [ 'paper.axue.de', ]
 
 DATABASES = {
     'default': {
