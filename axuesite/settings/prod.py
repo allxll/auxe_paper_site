@@ -39,7 +39,7 @@ DATABASES = {
 }
 
 
-ALLOWED_HOSTS = [ paper.axue.de ]
+ALLOWED_HOSTS = [ 'paper.axue.de' ]
 
 
 # Application definition
