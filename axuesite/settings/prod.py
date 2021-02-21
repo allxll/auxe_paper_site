@@ -25,8 +25,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 DEBUG = False
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+STATIC_ROOT = '/var/www/paper.axue.de/static/'
+MEDIA_ROOT = '/var/www/paper.axue.de/media/'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DATABASES = {
     'default': {
